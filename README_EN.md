@@ -23,7 +23,7 @@ pi0-episode1-publish/
 ├── .gitignore
 ├── README.md
 ├── README_EN.md
-├── lerobot_single_student/          # Robot, teleoperation, recording, deployment
+├── lerobot/          # Robot, teleoperation, recording, deployment
 │   ├── README.md                    # Original subproject documentation
 │   ├── LICENSE
 │   ├── CONTRIBUTING.md
@@ -48,7 +48,7 @@ pi0-episode1-publish/
 │       ├── datasets/
 │       ├── policies/
 │       └── ...
-└── openpi_episode1_student/          # pi0 model, training, policy service
+└── openpi/          # pi0 model, training, policy service
     ├── README.md                    # Copy of root documentation for packaging
     ├── README_EN.md
     ├── LICENSE
@@ -251,14 +251,14 @@ Fine-tuned weights do not currently have a public download link. A future Huggin
 
 Inference does not need optimizer `train_state/`; resuming training requires the complete training checkpoint. A model release should also document the training configuration, code revision, dataset fields, joint order, action units, and task instructions. OpenPI/JAX checkpoints cannot be loaded directly as LeRobot/PyTorch `pretrained_model` directories.
 
-Keep code, dependency files, and original licenses in the GitHub release. Exclude `pi0_trained/`, `checkpoints/`, actual data directories, `videos_*`, `.venv/`, caches, and logs. Do not exclude every directory named `datasets/`: `src/lerobot/datasets/` contains required source code. Exclude old nested `.git` directories when copying the two projects into a new release repository, while preserving the source dependencies.
+
 
 ## Known limitations
 
 - Default training paths and dataset identifiers come from an existing development environment and need adjustment.
 - `openpi_client_test.py` at the OpenPI project root uses random states and is not a real-data or policy-quality evaluation. `enpei_client.py` uses a different input protocol from this single-arm adapter; use `lerobot.test_openpi` for the documented workflow.
 - The robot client assembles state by iterating over `.pos` observation fields and falls back to a default state when those fields are missing. Verify that actual state feedback is complete and correctly ordered before deployment.
-- These instructions were derived from the current source. A clean installation, new training run, and hardware regression test have not been performed for this documentation update.
+
 
 ## Acknowledgments and licensing
 

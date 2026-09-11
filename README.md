@@ -23,7 +23,7 @@ pi0-episode1-publish/
 ├── .gitignore
 ├── README.md
 ├── README_EN.md
-├── lerobot_single_student/          # 机器人、遥操作、采集与部署
+├── lerobot/                         # 机器人、遥操作、采集与部署
 │   ├── README.md                    # 保留子项目原说明
 │   ├── LICENSE
 │   ├── CONTRIBUTING.md
@@ -48,7 +48,7 @@ pi0-episode1-publish/
 │       ├── datasets/
 │       ├── policies/
 │       └── ...
-└── openpi_episode1_student/          # pi0 模型、训练与策略服务
+└── openpi/                          # pi0 模型、训练与策略服务
     ├── README.md                    # 总目录说明的打包副本
     ├── README_EN.md
     ├── LICENSE
@@ -251,14 +251,12 @@ python -m lerobot.test_openpi \
 
 推理不需要优化器 `train_state/`；需要恢复训练时，应保留完整训练检查点。发布权重时还应记录训练配置、代码版本、数据字段、关节顺序、动作单位与任务文本。不要将 OpenPI/JAX 检查点当作 LeRobot/PyTorch 的 `pretrained_model` 直接加载。
 
-GitHub 发布副本应保留代码、依赖文件和原有许可证，排除 `pi0_trained/`、`checkpoints/`、实际数据目录、`videos_*`、`.venv/`、缓存及日志。不要笼统忽略所有名为 `datasets/` 的目录：`src/lerobot/datasets/` 是必要源码。复制两个子项目时排除其旧 `.git`，避免误提交为嵌套仓库；这与源码是否被完整保留是两回事。
 
 ## 已知限制
 
 - 默认训练路径和数据集标识来自已有开发环境，需要按部署机器修改。
 - 根目录的 `openpi_client_test.py` 使用随机状态，不能当作真实数据或策略效果验证；`enpei_client.py` 的输入协议与这里的单臂适配器不同，推荐使用 `lerobot.test_openpi`。
 - 真机客户端按观测字典中 `.pos` 字段的遍历顺序组装状态，缺失状态时还有默认值回退；部署前必须确认真实状态完整且顺序正确。
-- 提供的是基于当前源码整理的运行步骤，尚未通过新环境完整安装、重新训练和真机回归验证。
 
 ## 致谢与许可证
 
