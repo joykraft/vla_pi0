@@ -1,0 +1,7 @@
+# 过滤所有的 __pycache__ 目录（包括所有层级）
+__pycache__/
+*/__pycache__/
+**/__pycache__/
+# 过滤所有的 .pyc 文件
+*.pyc
+**/*.pyc

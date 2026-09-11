@@ -1,0 +1,49 @@
+# Python environments, caches and build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+build/
+dist/
+*.egg-info/
+*.so
+*.o
+
+# Local editors and secrets
+.vscode/
+.idea/
+.DS_Store
+__MACOSX/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Model weights, training output and experiment logs
+checkpoints/
+outputs/
+wandb/
+policy_records/
+*.log
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.tar
+*.tar.gz
+
+# Local datasets only; src/lerobot/datasets is required source code
+/dataset/
+/pi0_trained/
+/videos_*/
+/openpi_episode1_student/enpei_dataset/
+/openpi_episode1_student/assets/
+/lerobot_single_student/dataset/
+/lerobot_single_student/data/
