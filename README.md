@@ -11,6 +11,8 @@
 | :---: | :---: |
 | [<img src="docs/media/cover.jpg" alt="抽屉操作与红色物块抓放实机演示。封面" width="420">](docs/media/demo.mp4) | <img src="docs/media/demo.gif" alt="抽屉操作与红色物块抓放实机演示。2 倍速动图" width="420"> |
 
+[**观看完整实机视频（约 1 分 40 秒）**](docs/media/demo.mp4) — 包含反复关抽屉、移动方块等人为干扰过程；原速、有声。
+
 ## 功能与范围
 
 - Episode1 主从臂遥操作与 LeRobot 格式数据采集。

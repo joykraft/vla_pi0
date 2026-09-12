@@ -11,6 +11,8 @@ An Episode1 single-arm vision-language-action (VLA) project built on OpenPI and 
 | :---: | :---: |
 | [<img src="docs/media/cover.jpg" alt="Real-robot demonstration of drawer manipulation and red-block pick-and-place. Cover frame" width="420">](docs/media/demo.mp4) | <img src="docs/media/demo.gif" alt="Real-robot demonstration of drawer manipulation and red-block pick-and-place. Animated preview at 2x speed" width="420"> |
 
+[**Watch the full real-robot video (about 1 min 40 s)**](docs/media/demo.mp4) — Includes repeated drawer closing and block repositioning by the operator; original speed with audio.
+
 ## Features and scope
 
 - Episode1 leader–follower teleoperation and LeRobot dataset recording.
