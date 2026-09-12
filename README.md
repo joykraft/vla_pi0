@@ -7,15 +7,9 @@
 
 ## 实机演示
 
-抽屉操作与红色物块抓放实机演示。 点击封面可查看 41.4 秒原速视频。
-
-| 实机封面 · 点击查看视频 | 动作预览 · GIF 2× |
+| 实机封面  | 动作预览 · GIF 2× |
 | :---: | :---: |
 | [<img src="docs/media/cover.jpg" alt="抽屉操作与红色物块抓放实机演示。封面" width="420">](docs/media/demo.mp4) | <img src="docs/media/demo.gif" alt="抽屉操作与红色物块抓放实机演示。2 倍速动图" width="420"> |
-
-[查看原速实机视频（MP4）](docs/media/demo.mp4)
-
-GIF 为 2 倍速连续片段，MP4 保持原速；视频无音轨。[素材说明](docs/media/README.md)
 
 ## 功能与范围
 

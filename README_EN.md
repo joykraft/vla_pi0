@@ -7,15 +7,9 @@ An Episode1 single-arm vision-language-action (VLA) project built on OpenPI and 
 
 ## Real-Robot Demo
 
-Real-robot demonstration of drawer manipulation and red-block pick-and-place. Click the cover to view the 41.4-second video at original speed.
-
-| Cover · click to view video | Action preview · 2× GIF |
+| Cover | Action preview · 2× GIF |
 | :---: | :---: |
 | [<img src="docs/media/cover.jpg" alt="Real-robot demonstration of drawer manipulation and red-block pick-and-place. Cover frame" width="420">](docs/media/demo.mp4) | <img src="docs/media/demo.gif" alt="Real-robot demonstration of drawer manipulation and red-block pick-and-place. Animated preview at 2x speed" width="420"> |
-
-[View the real-robot video at original speed (MP4)](docs/media/demo.mp4)
-
-The GIF is a continuous excerpt at 2× speed; the MP4 retains original speed. Audio is omitted. [Media notes](docs/media/README.md)
 
 ## Features and scope
 
