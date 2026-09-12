@@ -5,6 +5,18 @@
 基于 OpenPI 和 LeRobot 的 Episode1 单臂视觉语言动作（VLA）项目，包含遥操作数据采集、π₀（pi0）LoRA 微调，以及通过 WebSocket 连接策略服务的真机部署代码。模型根据固定相机、手眼相机、机器人状态和语言指令预测动作序列。
 
 
+## 实机演示
+
+抽屉操作与红色物块抓放实机演示。 点击封面可查看 41.4 秒原速视频。
+
+| 实机封面 · 点击查看视频 | 动作预览 · GIF 2× |
+| :---: | :---: |
+| [<img src="docs/media/cover.jpg" alt="抽屉操作与红色物块抓放实机演示。封面" width="420">](docs/media/demo.mp4) | <img src="docs/media/demo.gif" alt="抽屉操作与红色物块抓放实机演示。2 倍速动图" width="420"> |
+
+[查看原速实机视频（MP4）](docs/media/demo.mp4)
+
+GIF 为 2 倍速连续片段，MP4 保持原速；视频无音轨。[素材说明](docs/media/README.md)
+
 ## 功能与范围
 
 - Episode1 主从臂遥操作与 LeRobot 格式数据采集。
